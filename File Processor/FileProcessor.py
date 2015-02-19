@@ -43,7 +43,7 @@ class Processor:
       self.getFeaturesFromFile(archive,fileName,reportFile)
       
   def run(self):
-    filepath= "dataSample.7z"
+    filepath= "/media/guillermo/DATA/dataSample.7z"
     fp = open(filepath, 'rb')
     archive = py7zlib.Archive7z(fp)
     self.processAllFiles("",archive)
